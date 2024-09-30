@@ -1,7 +1,7 @@
 // ProjectsPage.tsx
-import React from 'react';
+import React from "react";
 import projectsData from "../Components/Data/ProjectsData";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const ProjectsPage: React.FC = () => {
   return (
@@ -15,7 +15,7 @@ const ProjectsPage: React.FC = () => {
             <p>ROI: {project.roi}</p>
             <p>{project.location}</p>
             <p>Prices from: {project.price}</p>
-            <Link to={`/projects/${project.id}`}>See Details</Link>
+            <Link to={`/projects/${project.slug}`}>See Details</Link>
           </div>
         ))}
       </div>

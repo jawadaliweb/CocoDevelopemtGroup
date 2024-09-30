@@ -1,11 +1,11 @@
 // ProjectDetail.tsx
-import React from 'react';
-import { useParams } from 'react-router-dom';
+import React from "react";
+import { useParams } from "react-router-dom";
 import projectsData from "../Components/Data/ProjectsData";
 
 const ProjectDetail: React.FC = () => {
-  const { id } = useParams<{ id: string }>();
-  const project = projectsData.find((proj) => proj.id.toString() === id);
+  const { slug } = useParams<{ slug: string }>();
+  const project = projectsData.find((proj) => proj.slug.toString() === slug);
 
   if (!project) {
     return <div>Project not found</div>;

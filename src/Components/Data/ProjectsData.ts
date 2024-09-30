@@ -1,20 +1,29 @@
-// ProjectsData.ts
+// Import images
+import mansionLiving from '../../assets/Images/mansion-living.webp';
+import livingResort from '../../assets/Images/Living-Resort.webp';
+import lifestyleResort from '../../assets/Images/LifeStyle-Resort.webp';
+import modernJungleResort from '../../assets/Images/modern-jungle-resort-bali.webp';
+import luxuryBoulevard from '../../assets/Images/luxury-Boulevard-bali-villa.webp';
 
+// Define the Project interface
 export interface Project {
     id: number;
     title: string;
+    slug: string;
     roi: string;
     location: string;
     details: string[];
     price: string;
     image: string;
-    soldOut: boolean; // Changed type to boolean for better clarity
+    soldOut: boolean;
 }
 
+// Projects data array
 const projectsData: Project[] = [
     {
         id: 1,
         title: "The Coco Mansion",
+        slug: "The-Coco-Mansion",
         roi: "16.9%",
         location: "Seseh, Badung, Bali",
         details: [
@@ -25,11 +34,12 @@ const projectsData: Project[] = [
         ],
         price: "$495,000 USD",
         soldOut: true,
-        image: "src/assets/Images/Mansion-Living.webp", // Update the path to your image
+        image: mansionLiving,
     },
     {
         id: 2,
         title: "Coco Residential Living",
+        slug: "Coco-Residential-Living",
         roi: "15 - 17%",
         location: "Seseh, Badung, Bali",
         details: [
@@ -39,12 +49,13 @@ const projectsData: Project[] = [
             "Spacious rooftop & Pool",
         ],
         price: "$105,000 USD",
-        image: "src/assets/Images/Living-Resort.webp", // Update the path to your image
+        image: livingResort,
         soldOut: false,
     },
     {
         id: 3,
         title: "Lifestyle Resort",
+        slug: "Lifestyle-Resort",
         roi: "17 - 22%",
         location: "Bingin, Uluwatu, Bali",
         details: [
@@ -54,12 +65,13 @@ const projectsData: Project[] = [
             "Restaurant and bar",
         ],
         price: "$125,000 USD",
-        image: "src/assets/Images/LifeStyle-Resort.webp", // Update the path to your image
+        image: lifestyleResort,
         soldOut: false,
     },
     {
-        id: 4, // New ID for the next project
+        id: 4,
         title: "Amazona Jungle Resort",
+        slug: "Amazona-Jungle-Resort",
         roi: "15% - 20%",
         location: "Seminyak, Bali",
         details: [
@@ -69,12 +81,13 @@ const projectsData: Project[] = [
             "Luxury amenities",
         ],
         price: "$750,000 USD",
-        image: "src/assets/Images/modern-jungle-resort-bali.webp", // Update the path to your image
+        image: modernJungleResort,
         soldOut: false,
     },
     {
-        id: 5, // New ID for the next project
+        id: 5,
         title: "The Coco Oceanfront",
+        slug: "The-Coco-Oceanfront",
         roi: "20%",
         location: "Nusa Dua, Bali",
         details: [
@@ -84,7 +97,7 @@ const projectsData: Project[] = [
             "Outdoor lounge",
         ],
         price: "$850,000 USD",
-        image: "src/assets/Images/luxury-Boulevard-bali-villa.webp", // Update the path to your image
+        image: luxuryBoulevard,
         soldOut: false,
     },
 ];

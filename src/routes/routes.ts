@@ -24,7 +24,7 @@ export const routes: AppRoute[] = [
     },
     {
         name: "ProjectsSingle",
-        path: "/projects/:id",
+        path: "/projects/:slug",
         component: ProjectDetail,
     }
 ];
