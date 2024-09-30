@@ -1,0 +1,13 @@
+
+
+.storkerhero {
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    -webkit-text-fill-color: transparent;
+    font-size: 100px !important;
+}
+
+
+
+.hero-content {
+    line-height: 1 !important;
+}
